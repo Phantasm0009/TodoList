@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "test": "karma start",
-    "build": "webpack --mode production"
+    "start": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --open --mode development",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider karma start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production"
   },
   "keywords": [],
   "author": "",
